@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ecole_etudiant,ecole.etudiant,model_ecole_etudiant,base.group_user,1,1,1,1
+access_ecole_filiere,ecole.filiere,model_ecole_filiere,base.group_user,1,1,1,1
+access_ecole_module,ecole.module,model_ecole_module,base.group_user,1,1,1,1
+access_ecole_salle,ecole.salle,model_ecole_salle,base.group_user,1,1,1,1
