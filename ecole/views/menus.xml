@@ -1,0 +1,10 @@
+<odoo>
+  <data>
+    <menuitem id="menu_ecole_root" name="Ecole" sequence="-1"/>
+
+    <menuitem id="menu_ecole_etudiant" name="Étudiants" parent="menu_ecole_root" action="action_ecole_etudiant" sequence="10"/>
+    <menuitem id="menu_ecole_filiere" name="Filières" parent="menu_ecole_root" action="action_ecole_filiere" sequence="20"/>
+    <menuitem id="menu_ecole_module" name="Modules" parent="menu_ecole_root" action="action_ecole_module" sequence="30"/>
+    <menuitem id="menu_ecole_salle" name="Salles" parent="menu_ecole_root" action="action_ecole_salle" sequence="40"/>
+  </data>
+</odoo>

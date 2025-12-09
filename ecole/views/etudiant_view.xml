@@ -1,0 +1,48 @@
+<odoo>
+  <data>
+    <record id="action_ecole_etudiant" model="ir.actions.act_window">
+        <field name="name">Étudiants</field>
+        <field name="res_model">ecole.etudiant</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_ecole_etudiant_list" model="ir.ui.view">
+        <field name="name">ecole.etudiant.list</field>
+        <field name="model">ecole.etudiant</field>
+        <field name="arch" type="xml">
+            <list string="Liste des étudiants">
+                <field name="NumApogee"/>
+                <field name="Nom"/>
+                <field name="Prenom"/>
+                <field name="filiere_id"/>
+                <field name="Ville"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ecole_etudiant_form" model="ir.ui.view">
+        <field name="name">ecole.etudiant.form</field>
+        <field name="model">ecole.etudiant</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="NumApogee"/>
+                            <field name="Nom"/>
+                            <field name="Prenom"/>
+                        </group>
+                        <group>
+                            <field name="filiere_id"/>
+                            <field name="Email"/>
+                            <field name="Tel"/>
+                            <field name="Ville"/>
+                            <field name="Image" widget="image" class="oe_avatar"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+  </data>
+</odoo>

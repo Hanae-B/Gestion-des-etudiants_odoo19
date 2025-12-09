@@ -1,0 +1,37 @@
+<odoo>
+  <data>
+    <record id="action_ecole_salle" model="ir.actions.act_window">
+        <field name="name">Salles</field>
+        <field name="res_model">ecole.salle</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_ecole_salle_list" model="ir.ui.view">
+        <field name="name">ecole.salle.list</field>
+        <field name="model">ecole.salle</field>
+        <field name="arch" type="xml">
+            <list string="Liste des salles">
+                <field name="code"/>
+                <field name="salle"/>
+                <field name="bloc"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ecole_salle_form" model="ir.ui.view">
+        <field name="name">ecole.salle.form</field>
+        <field name="model">ecole.salle</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="salle"/>
+                        <field name="bloc"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+  </data>
+</odoo>

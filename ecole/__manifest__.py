@@ -22,7 +22,11 @@
 
     'data': [
         'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'views/etudiant_view.xml',
+        'views/filiere_view.xml',
+        'views/module_view.xml',  
+        'views/salle_view.xml',   
+        'views/menus.xml',        
     ],
 }
+

@@ -1,0 +1,46 @@
+<odoo>
+  <data>
+    <record id="action_ecole_module" model="ir.actions.act_window">
+        <field name="name">Modules</field>
+        <field name="res_model">ecole.module</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_ecole_module_list" model="ir.ui.view">
+        <field name="name">ecole.module.list</field>
+        <field name="model">ecole.module</field>
+        <field name="arch" type="xml">
+            <list string="Liste des modules">
+                <field name="ID_Module"/>
+                <field name="codeModule"/>
+                <field name="NomModule"/>
+                <field name="filiere_id"/>
+                <field name="salle_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ecole_module_form" model="ir.ui.view">
+        <field name="name">ecole.module.form</field>
+        <field name="model">ecole.module</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="ID_Module"/>
+                            <field name="codeModule"/>
+                            <field name="NomModule"/>
+                        </group>
+                        <group>
+                            <field name="filiere_id"/>
+                            <field name="salle_id"/>
+                            <field name="description"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+  </data>
+</odoo>
