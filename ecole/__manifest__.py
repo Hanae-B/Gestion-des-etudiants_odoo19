@@ -1,9 +1,9 @@
 {
     'name': "Ecole",
 
-    'summary': "Application pour la gestion des étudiants de la filière MGSI",
+    'summary': "Application pour la gestion des étudiants",
 
-    'description': """Cette application vous permet de gérer tous les étudiants de la filière MGSI""",
+    'description': """Cette application vous permet de gérer tous les étudiants"",
 
     'author': "Hanae Boudabza",
     'website': "http://ensao.ump.ma/fr",
